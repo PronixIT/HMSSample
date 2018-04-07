@@ -26,6 +26,7 @@ public class BookDoctorsActivity extends AppCompatActivity {
         hospital_lookup.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+
                 startActivity(new Intent(BookDoctorsActivity.this,HospitalsLookupActivity.class));
             }
         });
