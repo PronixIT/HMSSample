@@ -1,0 +1,227 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.percent.PercentRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="2"
+            android:background="@drawable/effect" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@mipmap/patient" />
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/ll_Profile"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/registrationbackgroundstyle"
+        android:orientation="vertical"
+        android:paddingLeft="6dp"
+        android:paddingRight="6dp"
+        app:layout_marginLeftPercent="8%"
+        app:layout_marginRightPercent="8%"
+        app:layout_marginTopPercent="18%">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:layout_marginLeftPercent="8%"
+            app:layout_marginRightPercent="8%"
+            app:layout_marginTopPercent="18%">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@null"
+                android:orientation="vertical">
+
+                <android.support.design.widget.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:textColorHint="@color/colorPrimaryDark"
+                    app:hintTextAppearance="@style/MyAppearance">
+
+                    <android.support.design.widget.TextInputEditText
+                        android:id="@+id/et_Mobile"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:enabled="false"
+                        android:hint="Mobile"
+                        android:paddingLeft="8dp"
+                        android:text="9492501867"
+                        android:textColor="@color/fontColor"
+                        android:textColorHint="@color/hintColor"
+                        android:textSize="@dimen/font_size" />
+                </android.support.design.widget.TextInputLayout>
+
+                <android.support.design.widget.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:textColorHint="@color/colorPrimaryDark"
+                    app:hintTextAppearance="@style/MyAppearance">
+
+                    <android.support.design.widget.TextInputEditText
+                        android:id="@+id/et_Email"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="Email"
+                        android:paddingLeft="8dp"
+                        android:text="ramesh@gmail.com"
+                        android:textColor="@color/fontColor"
+                        android:textColorHint="@color/hintColor"
+                        android:textSize="@dimen/font_size" />
+                </android.support.design.widget.TextInputLayout>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="8dp"
+                    android:text="Gender"
+                    android:textColor="@color/fontColor"
+                    android:textSize="@dimen/font_size" />
+
+                <RadioGroup
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="4dp"
+                    android:orientation="horizontal"
+                    android:paddingLeft="8dp"
+                    android:tooltipText="Gender">
+
+                    <RadioButton
+                        android:id="@+id/rb_Male"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Male"
+                        android:textColor="@color/colorPrimaryDark"
+                        android:textSize="@dimen/font_size" />
+
+                    <RadioButton
+                        android:id="@+id/rb_Female"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Female"
+                        android:textColor="@color/colorPrimaryDark"
+                        android:textSize="@dimen/font_size" />
+
+                </RadioGroup>
+
+                <android.support.design.widget.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:textColorHint="@color/colorPrimaryDark"
+                    app:hintTextAppearance="@style/MyAppearance">
+
+                    <android.support.design.widget.TextInputEditText
+                        android:id="@+id/et_Age"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="Age"
+                        android:inputType="number"
+                        android:maxLength="2"
+                        android:paddingLeft="8dp"
+                        android:text="28"
+                        android:textColor="@color/fontColor"
+                        android:textColorHint="@color/hintColor"
+                        android:textSize="@dimen/font_size" />
+                </android.support.design.widget.TextInputLayout>
+
+                <android.support.design.widget.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:textColorHint="@color/colorPrimaryDark"
+                    app:hintTextAppearance="@style/MyAppearance">
+
+                    <android.support.design.widget.TextInputEditText
+                        android:id="@+id/et_BloodType"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="Blood Type"
+                        android:maxLength="3"
+                        android:minLines="1"
+                        android:paddingLeft="8dp"
+                        android:text="O+"
+                        android:textColor="@color/fontColor"
+                        android:textColorHint="@color/hintColor"
+                        android:textSize="@dimen/font_size" />
+                </android.support.design.widget.TextInputLayout>
+
+                <android.support.design.widget.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:textColorHint="@color/colorPrimaryDark"
+                    app:hintTextAppearance="@style/MyAppearance">
+
+                    <android.support.design.widget.TextInputEditText
+                        android:id="@+id/et_Address"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="Address"
+                        android:paddingLeft="8dp"
+                        android:text="Vijayawada"
+                        android:textColor="@color/fontColor"
+                        android:textColorHint="@color/hintColor"
+                        android:textSize="@dimen/font_size" />
+                </android.support.design.widget.TextInputLayout>
+
+                <Button
+                    android:id="@+id/but_Submit"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="5dp"
+                    android:background="@color/colorPrimary"
+                    android:gravity="center"
+                    android:onClick="onClick"
+                    android:text="Submit"
+                    android:textColor="@color/white" />
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+
+
+    <TextView
+        android:id="@+id/tv_Name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:text="Ramesh"
+        android:textColor="@color/white"
+        android:textSize="32sp"
+        android:textStyle="bold"
+        app:layout_marginTopPercent="8%" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:text=""
+        android:textColor="@color/white"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_marginTopPercent="14%" />
+
+
+</android.support.percent.PercentRelativeLayout>

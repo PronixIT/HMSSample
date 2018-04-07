@@ -1,0 +1,36 @@
+<resources>
+    <string name="app_name">HMS</string>
+    <string name="item_1">Home</string>
+    <string name="item_2">Your List</string>
+    <string name="item_3">Name</string>
+    <string name="title_activity_patient">PatientActivity</string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Notifications</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_activity_hospital_dashboard">HospitalDashboardActivity</string>
+    <string name="title_activity_login">Log in</string>
+
+    <!-- Strings relatedLoginogin -->
+    <string name="prompt_email">Email</string>
+    <string name="prompt_password">Password</string>
+    <string name="action_sign_in">Sign in or register</string>
+    <string name="action_sign_in_short">Sign in</string>
+    <string name="error_invalid_email">This email address is invalid</string>
+    <string name="error_invalid_password">This password is too short</string>
+    <string name="error_incorrect_password">This password is incorrect</string>
+    <string name="error_field_required">This field is required</string>
+    <string name="permission_rationale">"Contacts permissions are needed for providing email
+        completions."
+    </string>
+
+    <string-array name="months_array">
+        <item>General Physician</item>
+        <item>Anesthesiologists</item>
+        <item>Cardiologists</item>
+        <item>Dermatologists</item>
+        <item>Endocrinologists</item>
+    </string-array>
+</resources>
